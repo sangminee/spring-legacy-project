@@ -1,0 +1,5 @@
+package net.developia.spirng03.mapper;
+
+public interface BoardMapper {
+
+}

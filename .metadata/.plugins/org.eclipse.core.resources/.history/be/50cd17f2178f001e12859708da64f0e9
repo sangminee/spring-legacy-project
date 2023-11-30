@@ -1,0 +1,5 @@
+package net.developia.spring02.controller;
+
+public class SampleRestController {
+
+}

@@ -1,0 +1,9 @@
+package net.developia.spring02.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SampleRestController {
+
+	
+}
