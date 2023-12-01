@@ -12,6 +12,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import lombok.extern.log4j.Log4j;
 import net.developia.spring03.domain.BoardVO;
+import net.developia.spring03.domain.Criteria;
 
 @WebAppConfiguration
 @RunWith(SpringRunner.class)
@@ -42,7 +43,9 @@ public class BoardServiceTests {
 	
 	@Test
 	public void testGetList() {
-		service.getList().forEach(board -> log.info(board));
+//		service.getList().forEach(board -> log.info(board));
+		
+		service.getList(new Criteria(2,10)).forEach(board -> log.info(board));
 	}
 	
 	@Test

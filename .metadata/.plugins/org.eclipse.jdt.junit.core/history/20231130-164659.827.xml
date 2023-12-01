@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardServiceTests" project="spring03" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="net.developia.spring03.service.BoardServiceTests" time="0.84">
-    <testcase name="testGet" classname="net.developia.spring03.service.BoardServiceTests" time="0.777"/>
-    <testcase name="testExist" classname="net.developia.spring03.service.BoardServiceTests" time="0.001"/>
-    <testcase name="testGetList" classname="net.developia.spring03.service.BoardServiceTests" time="0.029"/>
-    <testcase name="testRegister" classname="net.developia.spring03.service.BoardServiceTests" time="0.03"/>
-  </testsuite>
-</testrun>

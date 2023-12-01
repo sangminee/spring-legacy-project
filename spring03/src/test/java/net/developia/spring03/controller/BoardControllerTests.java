@@ -30,10 +30,13 @@ public class BoardControllerTests {
 		this.mockMvc = MockMvcBuilders.webAppContextSetup(ctx).build();
 	}
 	
+	
 	@Test
 	public void testList() throws Exception{
 		log.info(
-			mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))
+			mockMvc.perform(MockMvcRequestBuilders.get("/board/list")
+					.param("pageNum", "2")
+					.param("amount", "50"))
 			.andReturn()
 			.getModelAndView()
 			.getModelMap());

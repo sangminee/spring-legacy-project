@@ -12,6 +12,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import lombok.AllArgsConstructor;
 import lombok.extern.java.Log;
 import net.developia.spring03.domain.BoardVO;
+import net.developia.spring03.domain.Criteria;
+import net.developia.spring03.domain.PageDTO;
 import net.developia.spring03.service.BoardService;
 
 @Controller
@@ -23,9 +25,15 @@ public class BoardController {
 	private BoardService service;
 	
 	@GetMapping("/list")
-	public void list(Model model) {
-		log.info("list");
-		model.addAttribute("list", service.getList());
+	public void list(Criteria cri, Model model) {
+		log.info("list: " + cri);
+		model.addAttribute("list", service.getList(cri));
+		model.addAttribute("pageMaker", new PageDTO(cri, 123));
+	}
+	
+	@GetMapping("/register")
+	public void register() {
+		
 	}
 	
 	@PostMapping("/register")
@@ -36,10 +44,10 @@ public class BoardController {
 		return "redirect:/board/list";
 	}
 	
-	@GetMapping("/get")
+	@GetMapping({"/get", "/modify"})
 	public void get(@RequestParam("bno") long bno, Model model) {
-		log.info("list");
-		model.addAttribute("list", service.get(bno));
+		log.info("/get or /modify");
+		model.addAttribute("board", service.get(bno));
 	}
 	
 	@PostMapping("/modify")

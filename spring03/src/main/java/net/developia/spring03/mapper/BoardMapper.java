@@ -1,11 +1,14 @@
 package net.developia.spring03.mapper;
 
 import java.util.List;
-import org.apache.ibatis.annotations.Select;
+
 import net.developia.spring03.domain.BoardVO;
+import net.developia.spring03.domain.Criteria;
 
 public interface BoardMapper {
 	public List<BoardVO> getList();
+	
+	public List<BoardVO> getListWithPaging(Criteria cri);
 	
 	public void insert(BoardVO board);
 	

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import lombok.AllArgsConstructor;
 import lombok.extern.java.Log;
 import net.developia.spring03.domain.BoardVO;
+import net.developia.spring03.domain.Criteria;
 import net.developia.spring03.mapper.BoardMapper;
 
 @Log
@@ -43,10 +44,16 @@ public class BoardServiceImpl implements BoardService{
 		return mapper.delete(bno) == 1;
 	}
 
+//	@Override
+//	public List<BoardVO> getList() {
+//		log.info("getList .......");
+//		return mapper.getList();
+//	}
+
 	@Override
-	public List<BoardVO> getList() {
-		log.info("getList .......");
-		return mapper.getList();
+	public List<BoardVO> getList(Criteria cri) {
+		log.info("get List with criteria: " + cri);
+		return mapper.getListWithPaging(cri);
 	}
 
 }
