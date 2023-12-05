@@ -10,5 +10,5 @@
 <aop-reference advice-type="AFTER" bean="1:BeansModel|2:spring04|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:sampleController:10" bean-file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.Aop{AopAdvices.java[AopAdvices~ad_after" source-start-line="26" target="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.controller{SampleController.java[SampleController~getSample" target-start-line="39"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="spring01"/>
+<aop-project name="spring05"/>
 </aop-reference-model>
