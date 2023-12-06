@@ -11,4 +11,5 @@
 </aspect-definition>
 </aop-project>
 <aop-project name="spring05"/>
+<aop-project name="spring06"/>
 </aop-reference-model>
