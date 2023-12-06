@@ -1,10 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3c//DTD HTML 4.01 Transitional//EN" 
+					  "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
@@ -19,6 +20,11 @@
 	</div>
 	<div>
 		<input type='password' name='password' value='admin'>
+	</div>
+	
+	<!-- 선택 시 remember-me 라는 쿠키 생성 -->
+	<div> 
+		<input type='checkbox' name='remeber-me'> Remember Me
 	</div>
 	<div>
 		<input type='submit'>
