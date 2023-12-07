@@ -24,7 +24,7 @@
 	
 	<!-- 선택 시 remember-me 라는 쿠키 생성 -->
 	<div> 
-		<input type='checkbox' name='remeber-me'> Remember Me
+		<input type='checkbox' name='remember-me'> Remember Me
 	</div>
 	<div>
 		<input type='submit'>

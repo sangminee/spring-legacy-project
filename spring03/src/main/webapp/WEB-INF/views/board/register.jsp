@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
@@ -17,9 +17,11 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">
+		
 			<div class="panel-heading">Board Register</div>
 			<!-- /.panel-heading -->
 			<div class="panel-body">
+			
 				<form role="form" action="/board/register" method="post">
 					<div class ="form-group">
 						<label>Title</label> <input class="form-control" name='title'>
@@ -33,6 +35,7 @@
 					<button type="submit" class="btn btn-default">Submit Button</button>
 					<button type="reset" class="btn btn-default">Reset Button</button>
 				</form>
+				
 			</div>
 			<!-- /.panel-body -->
 		</div>

@@ -14,7 +14,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import lombok.extern.log4j.Log4j;
 
-@WebAppConfiguration // ServletÀÇ ServletContext¸¦ ÀÌ¿ëÇÏ±â À§ÇØ¼­ÀÓ 
+@WebAppConfiguration 
 @RunWith(SpringRunner.class)
 @ContextConfiguration("file:**/*-context.xml")
 @Log4j
@@ -45,15 +45,14 @@ public class BoardControllerTests {
 	@Test
 	public void testRegister() throws Exception{
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders.post("/board/register")
-					.param("title", "Å×½ºÆ® »õ±Û Á¦¸ñ")
-					.param("content", "Å×½ºÆ® »õ±Û ³»¿ë")
+					.param("title", "í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ì œëª©")
+					.param("content", "í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ë‚´ìš©")
 					.param("writer", "user00")
 					).andReturn().getModelAndView().getViewName();
 		
 		log.info(resultPage);
 	}
 	
-	// Á¶È¸ °ü·Ã Å×½ºÆ® ÄÚµå 
 	@Test
 	public void testGet() throws Exception{
 		log.info(
@@ -64,20 +63,18 @@ public class BoardControllerTests {
 					.getModelAndView().getModelMap());
 	}
 	
-	// ¼öÁ¤ 
 	@Test
 	public void testModify() throws Exception{
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders.post("/board/modify")
 					.param("bno", "30")
-					.param("title", "¼öÁ¤µÈ Å×½ºÆ® »õ±Û Á¦¸ñ")
-					.param("content", "¼öÁ¤µÈ Å×½ºÆ® »õ±Û ³»¿ë")
+					.param("title", "ìˆ˜ì •ëœ í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ì œëª©")
+					.param("content", "ìˆ˜ì •ëœ í…ŒìŠ¤íŠ¸ ìƒˆê¸€ ì œëª©")
 					.param("writer", "user00")
 					).andReturn().getModelAndView().getViewName();
 		
 		log.info(resultPage);
 	}
 	
-	// »èÁ¦
 	@Test
 	public void testRemove() throws Exception{
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders.post("/board/remove")

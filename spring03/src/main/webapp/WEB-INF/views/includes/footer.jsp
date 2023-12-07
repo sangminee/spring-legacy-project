@@ -23,6 +23,7 @@
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
+    <!-- 반응형 웹 처리 -->
     $(document).ready(function() {
         $('#dataTables-example').DataTable({
             responsive: true
