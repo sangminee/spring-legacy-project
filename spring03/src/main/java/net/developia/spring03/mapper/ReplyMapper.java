@@ -10,7 +10,7 @@ import net.developia.spring03.domain.ReplyVO;
 public interface ReplyMapper {
 	public int insert(ReplyVO vo);
 
-	public ReplyVO read(Long bno); // 특정 댓글 읽기
+	public ReplyVO read(Long bno); 
 
 	public int delete(Long rno);
 

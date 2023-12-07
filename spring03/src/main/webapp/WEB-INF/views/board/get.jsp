@@ -59,7 +59,13 @@ $(document).ready(function(){
 						
 				<form id='operForm' action="/board/modify" method="get">
 					<input type='hidden' id='bno' name='bno' value='<c:out value="${board.bno}"/>'>
+					
+					<!-- 목록 페이지로 이동할 때 페이지 번호 유지 -->
+					<input type='hidden' name='pageNum' value='<c:out value="${cri.pageNum}"/>'>
+					<input type='hidden' name='amount' value='<c:out value="${cri.amount}"/>'>
 				</form>
+				
+				
 			</div>
 			<!-- /.panel-body -->
 		</div>

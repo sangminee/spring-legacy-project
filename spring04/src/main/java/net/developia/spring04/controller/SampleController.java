@@ -30,7 +30,7 @@ public class SampleController {
 		log.info("MIME TYPE: " + MediaType.TEXT_PLAIN_VALUE);
 		return ResponseEntity
 				.status(HttpStatus.OK)
-				.body("¾È³çÇÏ¼¼¿ä");
+				.body("ì•ˆë…•í•˜ì„¸ìš”");
 	}
 	
 	@GetMapping(value="/getSample", 
@@ -39,14 +39,14 @@ public class SampleController {
 	public ResponseEntity<SampleVO> getSample() {
 		return ResponseEntity
 				.status(HttpStatus.OK)
-				.body(new SampleVO(112, "½ºÅ¸", "·Îµå"));
+				.body(new SampleVO(112, "ìŠ¤íƒ€", "ë¡œë“œ"));
 	}
 	
 //	@GetMapping(value = "/getSample2")
 //	public ResponseEntity<SampleVO> getSample2() {
 //		return ResponseEntity
 //				.status(HttpStatus.OK)
-//				.body(new SampleVO(113, "·ÎÄÏ", "¶óÄï"));
+//				.body(new SampleVO(113, "ë¡œì¼“", "ë¼ì¿¤"));
 //	}
 	
 	@GetMapping(value = "/getList")
@@ -61,7 +61,7 @@ public class SampleController {
 	@GetMapping(value = "/getSample2")
 	public ResponseEntity<Map<String, SampleVO>> getMap() {
 		Map<String, SampleVO> map = new HashMap<>();
-		map.put("First", new SampleVO(113, "·ÎÄÏ", "¶óÄï"));
+		map.put("First", new SampleVO(113, "ê·¸ë£¨íŠ¸", "ì£¼ë‹ˆì–´"));
 		
 		return ResponseEntity
 				.status(HttpStatus.OK)

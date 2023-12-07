@@ -31,8 +31,8 @@ public class BoardMapperTests {
 	@Test
 	public void testInsert() {
 		BoardVO board = new BoardVO();
-		board.setTitle("»õ·Î ÀÛ¼ºÇÏ´Â ±Û");
-		board.setContent("»õ·Î ÀÛ¼ºÇÏ´Â ³»¿ë");
+		board.setTitle("ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½");
+		board.setContent("ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		board.setWriter("newbie");
 		
 		mapper.insert(board);
@@ -41,8 +41,8 @@ public class BoardMapperTests {
 	@Test
 	public void testInsertSelectKey() {
 		BoardVO board = new BoardVO();
-		board.setTitle("»õ·Î ÀÛ¼ºÇÏ´Â ±Û select key");
-		board.setContent("»õ·Î ÀÛ¼ºÇÏ´Â ³»¿ë select key ");
+		board.setTitle("ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ select key");
+		board.setContent("ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ select key ");
 		board.setWriter("newbie");
 		
 		mapper.insertSelectKey(board);
@@ -52,7 +52,7 @@ public class BoardMapperTests {
 	
 	@Test 
 	public void testRead() {
-		// Á¸ÀçÇÏ´Â °Ô½Ã¹° ¹øÈ£·Î Å×½ºÆ® 
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½×½ï¿½Æ® 
 		BoardVO board = mapper.read(5L);
 		log.info(board);
 	}
@@ -66,8 +66,8 @@ public class BoardMapperTests {
 	public void testUpdate() {
 		BoardVO board = new BoardVO();
 		board.setBno(6L);
-		board.setTitle("¼öÁ¤µÈ Á¦¸ñ");
-		board.setContent("¼öÁ¤µÈ ³»¿ë");
+		board.setTitle("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		board.setContent("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		board.setWriter("user00");
 		
 		int count = mapper.update(board);
@@ -79,9 +79,9 @@ public class BoardMapperTests {
 		
 		Criteria cri = new Criteria();	
 		
-		// 10°³¾¿ 3ÆäÀÌÁö
+		// 10ï¿½ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		cri.setPageNum(3);
-		cri.setAmout(10);
+		cri.setAmount(10);
 		
 		List<BoardVO> list = mapper.getListWithPaging(cri);
 		

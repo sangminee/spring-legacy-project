@@ -1,7 +1,5 @@
 package net.developia.spring03.mapper;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
-
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -31,9 +29,9 @@ public class ReplyMapperTests {
 	public void testCreate() {
 		IntStream.rangeClosed(1, 10).forEach(i -> {
 			ReplyVO vo = new ReplyVO();
-			// °Ô½Ã¹°ÀÇ ¹øÈ£
+			// ï¿½Ô½Ã¹ï¿½ï¿½ï¿½ ï¿½ï¿½È£
 			vo.setBno(bnoArr[i % 5]);
-			vo.setReply("´ñ±Û Å×½ºÆ®" + i);
+			vo.setReply("ï¿½ï¿½ï¿½ ï¿½×½ï¿½Æ®" + i);
 			vo.setReplyer("replyer" + i);
 			
 			mapper.insert(vo);

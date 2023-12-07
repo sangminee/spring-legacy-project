@@ -40,23 +40,27 @@ $(document).ready(function(){
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">
-			<div class="panel-heading">Board Register</div>
+			<div class="panel-heading">Board Modify Page</div>
 			<!-- /.panel-heading -->
 			<div class="panel-body">
 				<form role="form" action="/board/modify" method="post">
+				
+					<!-- 수정과 삭제 처리 -->
+					<input type='hidden' name='pageNum' value='<c:out value="${cri.pageNum}"/>'>
+					<input type='hidden' name='amout' value='<c:out value="${cri.amount}"/>'>
+					
 					<div class="form-group">
 						<label>Bno</label> 
 						<input class="form-control" name='bno' value='<c:out value="${board.bno}"/>' readonly="readonly">
 					</div>
 					<div class="form-group">
 						<label>Title</label> 
-						<input class="form-control" name='title' value='<c:out value="${board.title}"/>' readonly="readonly">
+						<input class="form-control" name='title' value='<c:out value="${board.title}"/>'>
 					</div>
 					<div class="form-group">
 						<label>Text area</label> 
 						<input class="form-control" rows="3"
-							name='content' value='<c:out value="${board.content}"/>'
-							readonly="readonly">
+							name='content' value='<c:out value="${board.content}"/>'>
 					</div>
 					<div class="form-group">
 						<label>Writer</label> 

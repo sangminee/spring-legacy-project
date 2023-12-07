@@ -1,5 +1,0 @@
-package net.developia.spring02.domain;
-
-public class TodoDTO {
-
-}

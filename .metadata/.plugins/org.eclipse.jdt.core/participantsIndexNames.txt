@@ -13,10 +13,10 @@ C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\17725135
 \spring03\src\main\java
 C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1082761791.index
 \spring03\src\main\java
-C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2547404784.index
-\project\src\main\java
 C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1934256663.index
 \spring03\src\main\java
+C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2547404784.index
+\project\src\main\java
 C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\862591626.index
 \spring01\src\main\java
 C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1417262606.index
@@ -29,5 +29,7 @@ C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\78261738
 \spring03\src\main\java
 C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3845585527.index
 \xml-mini-project\src\main\java
+C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1212829207.index
+\java-mini-project\src\main\java
 C:\dev\sts-spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3406767960.index
 \spring02\src\main\java

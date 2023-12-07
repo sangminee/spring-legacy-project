@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="mini-project"/>
+<aop-project name="xml-mini-project"/>
 <aop-project name="spring02"/>
-<aop-project name="spring03"/>
 <aop-project name="spring04">
-<aspect-definition advice-class-name="net.developia.spring04.Aop.AopAdvices" advice-method-name="ad_before" advice-type="BEFORE" aspect-end-line-number="26" aspect-name="aopAdvices" aspect-start-line-number="26" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(* net.developia.spring04.controller.SampleController.getSample*(..))" proxy-target-class="false">
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:spring04|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:sampleController:10" bean-file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.Aop{AopAdvices.java[AopAdvices~ad_before" source-start-line="19" target="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.controller{SampleController.java[SampleController~getSample" target-start-line="39"/>
-</aspect-definition>
 <aspect-definition advice-class-name="net.developia.spring04.Aop.AopAdvices" advice-method-name="ad_after" advice-type="AFTER" aspect-end-line-number="26" aspect-name="aopAdvices" aspect-start-line-number="26" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(* net.developia.spring04.controller.SampleController.getSample*(..))" proxy-target-class="false">
 <aop-reference advice-type="AFTER" bean="1:BeansModel|2:spring04|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:sampleController:10" bean-file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.Aop{AopAdvices.java[AopAdvices~ad_after" source-start-line="26" target="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.controller{SampleController.java[SampleController~getSample" target-start-line="39"/>
 </aspect-definition>
+<aspect-definition advice-class-name="net.developia.spring04.Aop.AopAdvices" advice-method-name="ad_before" advice-type="BEFORE" aspect-end-line-number="26" aspect-name="aopAdvices" aspect-start-line-number="26" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(* net.developia.spring04.controller.SampleController.getSample*(..))" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:spring04|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:sampleController:10" bean-file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/spring04/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.Aop{AopAdvices.java[AopAdvices~ad_before" source-start-line="19" target="=spring04/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.developia.spring04.controller{SampleController.java[SampleController~getSample" target-start-line="39"/>
+</aspect-definition>
 </aop-project>
-<aop-project name="spring06"/>
 <aop-project name="spring05"/>
+<aop-project name="spring06"/>
+<aop-project name="spring03"/>
 </aop-reference-model>

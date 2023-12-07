@@ -44,7 +44,7 @@ public class BoardController {
 		return "redirect:/board/list";
 	}
 	
-	@GetMapping({"/get", "/modify"})
+	@GetMapping({"/get", "/modify"}) // 수정 or 삭제 페이지 
 	public void get(@RequestParam("bno") long bno, Model model) {
 		log.info("/get or /modify");
 		model.addAttribute("board", service.get(bno));

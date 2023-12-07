@@ -20,8 +20,8 @@
 	 				rownum rn, bno, title, content, writer, updatedate
 	 			from 
 	 				tbl_board
-	 			where rownum <= #{pageNum} * #{amout})
-	 	where rn > (#{pageNum} -1) * #{amout}
+	 			where rownum <= #{pageNum} * #{amount})
+	 	where rn > (#{pageNum} -1) * #{amount}
 	 ]]>
 	</select>
 
@@ -31,8 +31,7 @@
 	</insert>
 
 	<insert id="insertSelectKey">
-		<selectKey keyProperty="bno" order="BEFORE"
-			resultType="long">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="long">
 			select seq_board.nextval from dual
 		</selectKey>
 		insert into tbl_board (bno, title, content, writer)
